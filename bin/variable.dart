@@ -14,7 +14,9 @@ void variableExample2() {
   //name = "어라운드 허브";
 
   dynamic vb = 123;
+  print(vb);
   vb = "어라운드 허브";
+  print(vb);
 }
 
 void integerExample() {
@@ -45,6 +47,7 @@ void numberCasting() {
   print(b);
 
   double c = 123;
+  print(c);
 }
 
 void stringToIntegerExample() {
