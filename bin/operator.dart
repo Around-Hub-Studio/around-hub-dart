@@ -84,18 +84,21 @@ void logicalOperator() {
 }
 
 void bitwiseAndShiftOperator() {
-  final value = 0x22;
-  final bitmask = 0x0f;
+  final value = 0x22; // 34
+  final bitmask = 0x0f; // 15
 
-  assert((value & bitmask) == 0x02); // AND
-  assert((value & ~bitmask) == 0x20); // AND NOT
-  assert((value | bitmask) == 0x2f); // OR
-  assert((value ^ bitmask) == 0x2d); // XOR
-  assert((value << 4) == 0x220); // Shift left
-  assert((value >> 4) == 0x02); // Shift right
-  assert((value >>> 4) == 0x02); // Unsigned shift right
-  assert((-value >> 4) == -0x03); // Shift right
-  assert((-value >>> 4) > 0); // Unsigned shift right
+  print(value);
+  print(bitmask);
+
+  print((value & bitmask)); // AND
+  print((value & ~bitmask)); // AND NOT
+  print((value | bitmask)); // OR
+  print((value ^ bitmask)); // XOR
+  print((value << 4)); // Shift left
+  print((value >> 4)); // Shift right
+  print((value >>> 4)); // Unsigned shift right
+  print((-value >> 4)); // Shift right
+  print((-value >>> 4)); // Unsigned shift right
 }
 
 void main() {

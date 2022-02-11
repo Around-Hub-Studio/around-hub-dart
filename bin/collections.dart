@@ -8,12 +8,12 @@ void listExample1() {
 
 void listExample2() {
   var list1 = [1, 2, 3];
-  print(list1);
-  print(list1[1]);
+  print(list1.runtimeType);
 
   var list2 = ['car', 'boat', 'plane'];
 
   var list3 = ['aroundHub', ...list2];
+  print(list3);
 
   var list4 = ['#0', for (var i in list1) '#$i'];
   print(list4);
@@ -23,6 +23,7 @@ void listExample2() {
   print(list5);
 
   dynamic list6 = [1, 2, 3];
+  print(list6.runtimeType);
 }
 
 void listExample3() {
@@ -51,7 +52,9 @@ void setExample1() {
 void setExample2() {
   Set<String> set = {'a', 'z', 'd', 'b'};
   set.add('dbcs');
+  set.add('a');
 
+  print(set);
   print(set.length);
   print(set.first);
   print(set.isNotEmpty);
