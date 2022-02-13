@@ -24,6 +24,20 @@ void ifElseIfElseExample() {
   } else {
     print("a가 3보다 같거나 작습니다.");
   }
+
+  //성적
+  if (a > 90) {
+    print("a");
+  } else if (a > 80) {
+    print("b");
+  }
+
+  // 잘못된 성적 출력
+  if (a > 80) {
+    print("b");
+  } else if (a > 90) {
+    print("a");
+  }
 }
 
 void switchExample() {
@@ -61,5 +75,5 @@ bool getBoolean() {
 }
 
 void main() {
-  ifElseIfElseExample();
+  switchExample();
 }
